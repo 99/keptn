@@ -2,16 +2,16 @@ name: CI
 on:
   # always execute docker build when something is pushed to master or release-* branches
   push:
-    branches:
-      - 'master'
-      - 'release-*'
-  # in addition, execute for pull requests to those branches
-  pull_request:
-    branches:
-      - 'master'
-      - 'release-*'
-    type: [labeled]
-  workflow_dispatch: # run CI when triggered manually
+#    branches:
+#      - 'master'
+#      - 'release-*'
+#  # in addition, execute for pull requests to those branches
+#  pull_request:
+#    branches:
+#      - 'master'
+#      - 'release-*'
+#    type: [labeled]
+#  workflow_dispatch: # run CI when triggered manually
 
 defaults:
   run:
